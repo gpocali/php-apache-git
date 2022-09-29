@@ -26,6 +26,8 @@ if [[ "${GIT_REPOSITORY}" != "" ]]; then
         directory=""
     fi
     ln -s /git${directory} /var/www/html
+    
+    apache2-foreground
 else
     echo "Environmental Variable GIT_REPOSITORY Not Defined."
 fi
