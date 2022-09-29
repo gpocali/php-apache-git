@@ -16,6 +16,7 @@ if [[ "${GIT_REPOSITORY}" != "" ]]; then
     else
         token=""
     fi
+    cd /
     git clone ${branch}https://${token}${GIT_REPOSITORY} /git
     cd /git
     rm -r /var/www/html

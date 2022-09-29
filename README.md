@@ -8,7 +8,11 @@
  - GIT_REPOSITORY - GIT Repository HTTPS Link without the leading "https://"
  - GIT_BRANCH - (Optional) GIT Branch or HEAD if omitted
  - GIT_DIRECTORY - (Optional) Directory within the GIT repository to mount as web root
- - GIT_TOKEN - (Optional) GIT Repository Personal Access Token - https://github.com/settings/tokens - If Secret is defined, it will be used first.
+ - GIT_TOKEN - (Optional) GIT Repository Personal Access Token - If Secret is defined, it will be used first.
  
 ## Secrets
- - php-apache-web-token - (Optional) GIT Repository Personal Access Token - https://github.com/settings/tokens
+ - php-apache-web-token - (Optional) GIT Repository Personal Access Token
+ 
+## GIT Token
+ - Create using https://github.com/settings/tokens
+ - Full Repo access permissions are required
