@@ -1,5 +1,5 @@
 # php-apache-git
- PHP Apache Web Server with Git Download of Site Content
+ PHP Apache Web Server with Git Download of Site Content based on php:8.1.10-apache-buster
 
 ## Overview
  This docker will launch PHP on Apache and then download the web content using Git

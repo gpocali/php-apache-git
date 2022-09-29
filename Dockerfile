@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:8.1.10-apache-buster
 
 # Fix debconf warnings upon build
 ARG DEBIAN_FRONTEND=noninteractive
