@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [[ "${GIT_REPOSITORY}" != "" ]]; then
-    if [ ! -e /git ]; then
-        mkdir /git
+    if [ -e /git ]; then
+        rm -r /git
     fi
     if [[ "${GIT_BRANCH}" != "" ]]; then
         branch="-b ${GIT_BRANCH} "
@@ -11,6 +11,8 @@ if [[ "${GIT_REPOSITORY}" != "" ]]; then
     fi
     if [ -e /run/secrets/php-apache-web-token ]; then
         token="$(cat /run/secrets/php-apache-web-token | tr)@"
+    elif [[ "${GIT_TOKEN}" != "" ]]; then
+        token="${GIT_TOKEN}@"
     else
         token=""
     fi
